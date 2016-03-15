@@ -41,11 +41,7 @@ class TEMPLATEView: UIViewController {
         button.addTarget(self, action: "buttonPressed", forControlEvents: .TouchUpInside)
 
         view.addSubview(button)
-        button.snp_makeConstraints { (make) -> Void in
-            make.width.height.equalTo(200)
-            make.center.equalTo(view)
-
-        }
+        // style and set constraints
 
     }
 
