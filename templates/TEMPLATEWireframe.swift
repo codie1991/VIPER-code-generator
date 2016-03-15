@@ -4,7 +4,7 @@
 //  Created: DATE
 //
 
-import Foundation
+import UIKit
 
 protocol TEMPLATEWireframeInterface {
 
@@ -35,7 +35,7 @@ class TEMPLATEWireframe {
         guard let stack = pushedVCStack where !stack.isEmpty else {
             return
         }
-        
+
         navigationController.setViewControllers(stack, animated: true)
         pushedVCStack = nil
 

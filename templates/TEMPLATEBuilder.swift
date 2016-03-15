@@ -3,6 +3,7 @@
 //
 //  Created: DATE
 //
+import UIKit
 
 protocol TEMPLATEModuleDelegate {
     func CAMEL_TEMP_NAMEModuleIsFinished()
