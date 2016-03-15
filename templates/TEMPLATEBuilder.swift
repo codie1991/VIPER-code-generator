@@ -4,8 +4,6 @@
 //  Created: DATE
 //
 
-import MBCore
-
 protocol TEMPLATEModuleDelegate {
     func CAMEL_TEMP_NAMEModuleIsFinished()
 }

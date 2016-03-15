@@ -5,9 +5,6 @@
 //
 
 import UIKit
-import MBCore
-import ShowsApi
-import SnapKit
 
 protocol TEMPLATEViewInterface: class {
 

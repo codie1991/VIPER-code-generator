@@ -4,9 +4,6 @@
 //  Created: DATE
 //
 
-import MBCore
-import ShowsApi
-
 protocol TEMPLATEViewPresenterInput {
 
     func willAppear()

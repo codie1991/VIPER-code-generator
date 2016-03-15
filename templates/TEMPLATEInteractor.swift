@@ -4,9 +4,6 @@
 //  Created: DATE
 //
 
-import MBCore
-import ShowsApi
-
 protocol TEMPLATEInteractorInterface {
 
     var output: TEMPLATEInteractorOutput? { get set }

@@ -5,8 +5,6 @@
 //
 
 import Foundation
-import MBCore
-import ShowsApi
 
 protocol TEMPLATEWireframeInterface {
 
@@ -19,6 +17,7 @@ class TEMPLATEWireframe {
 
     private let navigationController: UINavigationController
     private var moduleDelegate: TEMPLATEModuleDelegate?
+    var pushedVCStack: [UIViewController]?
 
     required init(navigationController: UINavigationController, moduleDelegate: TEMPLATEModuleDelegate) {
 
@@ -29,6 +28,17 @@ class TEMPLATEWireframe {
 
     deinit {
         print("Dealloc \(self.dynamicType)")
+    }
+
+    private func popSubModule() {
+
+        guard let stack = pushedVCStack where !stack.isEmpty else {
+            return
+        }
+        
+        navigationController.setViewControllers(stack, animated: true)
+        pushedVCStack = nil
+
     }
 
 }
